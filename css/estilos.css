@@ -1,15 +1,43 @@
-div.card>img{
-    background-color: dimgray;
-    padding: 0.4 rem;
-}
-
-.logo {
-    color: #fff;
+:root{
+    --red:#ff2e63;
+    --black:#252a24;
+    --blue:#08d9d6;
+    --white:#eaeaea;
 }
 
 body{
     background-color: aquamarine;
 }
+
+div.card>img{
+    background-color: dimgray;
+    padding: 0.4 rem;
+}
+
+#panel_desarrollo_web p{
+    background-color: yellowgreen;
+}
+
+#panel_desarrollo_java p{
+    background-color: yellowgreen;
+}
+
+#panel_base_de_datos p{
+    background-color: yellowgreen;
+}
+
+button{
+    background-color: blue;
+}
+
+form{
+    position: absolute;
+    background-color: rgba(255, 187, 0, 0.76);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
 .img-header{
     position: relative;
     width: 100%;
