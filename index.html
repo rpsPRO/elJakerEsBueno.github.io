@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Web</title>
+    <title>rpsPRO Web Personal</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href = "css/estilos.css">
@@ -18,12 +18,12 @@
         <!-- Podemos título a la barra de navegación-->
         <a class="navbar-brand" href="#">
             <!-- Añadimos imagen de github a la barra de menú-->
-            <img src="https://static.wikia.nocookie.net/mamarre-estudios-espanol/images/a/a3/FB_IMG_1596591789564.jpg/revision/latest/scale-to-width-down/310?cb=20200806023457&path-prefix=es"
-                class="d-inline-block align-top rounded-circle" width="80" height="80" alt="Juan">
-            ElJakerEsBueno
+            <img src="img/profile.jpg"
+                class="d-inline-block align-top rounded-circle" width="50" height="50" alt="fotoPerfil">
+            <a class="logo">rpsPRO</a>
         </a>
         <!-- botón para desplegar el menú en modo responsivo-->
-        <button class="navbar-toggler" type="button" data.toggle="collapse" data-target="#entradas_menu">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#entradas_menu">
             <!-- Esto hace que se vean las tres rayas del botón-->
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -40,7 +40,7 @@
                     <a class="nav-link" href="#" id="menu_inicio"> Inicio </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#" id="menu_desarrollo_web"> Web </a>
+                    <a class="nav-link" href="#panel_desarrollo_web" id="menu_desarrollo_web"> Web </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#" id="menu_desarrollo_java"> Java </a>
@@ -54,8 +54,90 @@
             </ul>
         </div>
     </nav>
+
+    
+
+    <div id="panel_desarrollo_web" class="panel">
+        <p>Desarrollo web</p>
+        <ul>
+            <li>HTML5</li>
+            <li>JavaScript Vanilla</li>
+            <li>CSS3</li>
+            <li>WebApps</li>
+        </ul>
+    </div>
+
+    <div id="panel_desarrollo_java" class="panel">
+        <p>Programas Java</p>
+        <ol type="1">
+            <li> Lenguajes de Programación
+                <ol type="a">
+                    <li> Bash </li>
+                    <li> PowerShell </li>
+                    <li> Python </li>
+                    <li> Java </li>
+                    <li> JavaScript </li>
+                    <li> C (Arduino) </li>
+                </ol>
+            </li>
+            <li> Programación lado cliente (frontend) 
+                <ol type="a">
+                    <li> React </li>
+                    <li> Angular </li>
+                    <li> Android </li>
+                </ol>
+            </li>
+            <li> Programación lado servidor (backend) 
+                <ol type="a">
+                    <li> NodeJS </li>
+                    <li> Spring Java </li>
+                    <li> Java Servlets </li>
+                </ol>
+            </li>
+        </ol>
+    </div>
+
+    <div id="panel_base_de_datos" class="panel">
+        <p>Base de Datos</p>
+        <ol type="I">
+            <li> SQL 
+                <ol type = "a">
+                    <li> Oracle </li>
+                    <li> MySQL </li>
+                </ol>
+            </li>
+            <li> NoSQL
+                <ol type = "a">
+                    <li> Redis  </li>
+                    <li> Mongo DB </li>
+                    <li> Firebase </li>
+                </ol>
+            </li>
+        </ol>
+    </div>
+
+    <div class="panel" id="panel_contacto">
+        <div>
+            <p>Para más información, contacte conmigo a través del correo rplazassanchez@gmail.com</p>
+            <form>
+                <label for="usuario">Usuario:</label><br>
+                <input type="text" id="usuario" name="usuario"><br>
+                <label for="pwd">Contraseña:</label><br>
+                <input type="password" id="pwd" name="pwd">
+            </form>
+        </div>
+    </div>
+
     <div class="container">
         <div id="panel_inicio" class="panel">
+            <div class="img-header">
+                <div class="welcome">
+                    <h1>Bienvenidos a la mejor página profesional de Programación</h1>
+                    <hr>
+                    <p>Agencia de Diseño y Desarrollo Web</p>
+                    <button id="abajo">Ver abajo</button>
+                </div>
+            </div>
             <h3>Desarrollador Freelance</h3>
             <!-- Los em van en función de la resolución de la pantalla
              y los rem van en función de la fuente de navegador-->
@@ -70,12 +152,12 @@
                             <p class="card-text">
                                 <ul>
                                     <li>HTML5</li>
-                                    <li>JavaScrpt Vanilla</li>
+                                    <li>JavaScript Vanilla</li>
                                     <li>CSS3</li>
                                     <li>WebApps</li>
                                 </ul>>
                             </p>
-                            <a href="https://ElJakerEsBueno.github.io" class="btn btn-primary">Ejemplo</a>
+                            <a href="https://rpspro.github.io/" class="btn btn-primary">Ejemplo</a>
                         </div>
                     </div>
                 </div>
@@ -114,7 +196,7 @@
                                     </li>
                                 </ol>
                             </p>
-                            <a href="https://ElJakerEsBueno.github.io" class="btn btn-primary">Ejemplo</a>
+                            <a href="https://rpspro.github.io/" class="btn btn-primary">Ejemplo</a>
                         </div>
                     </div>
                 </div>
@@ -142,72 +224,13 @@
                                 </li>
                             </ol>
                         </p>
-                        <a href="https://ElJakerEsBueno.github.io" class="btn btn-primary">Ejemplo</a>
+                        <a href="https://rpspro.github.io/" class="btn btn-primary">Ejemplo</a>
                     </div>
                 </div>
             </div>
         </div>
-        <div id="panel_desarrollo_web" class="panel">
-            <p>Desarrollo web</p>
-            <ul>
-                <li>HTML5</li>
-                <li>JavaScrpt Vanilla</li>
-                <li>CSS3</li>
-                <li>WebApps</li>
-            </ul>>
-        </div>
-        <div id="panel_desarrollo_java" class="panel">
-            <p>Programas Java</p>
-            <ol type="1">
-                <li> Lenguajes de Programación
-                    <ol type="a">
-                        <li> Bash </li>
-                        <li> PowerShell </li>
-                        <li> Python </li>
-                        <li> Java </li>
-                        <li> JavaScript </li>
-                        <li> C (Arduino) </li>
-                    </ol>
-                </li>
-                <li> Programación lado cliente (frontend) 
-                    <ol type="a">
-                        <li> React </li>
-                        <li> Angular </li>
-                        <li> Android </li>
-                    </ol>
-                </li>
-                <li> Programación lado servidor (backend) 
-                    <ol type="a">
-                        <li> NodeJS </li>
-                        <li> Spring Java </li>
-                        <li> Java Servlets </li>
-                    </ol>
-                </li>
-            </ol>
-        </div>
-        <div id="panel_base_de_datos" class="panel">
-            <p>Base de Datos</p>
-            <ol type="I">
-                <li> SQL 
-                    <ol type = "a">
-                        <li> Oracle </li>
-                        <li> MySQL </li>
-                    </ol>
-                </li>
-                <li> NoSQL
-                    <ol type = "a">
-                        <li> Redis  </li>
-                        <li> Mongo DB </li>
-                        <li> Firebase </li>
-                    </ol>
-                </li>
-            </ol>
-        </div>
-        <div id="panel_contacto" class="panel">
-            <p>Contacto</p>
-        </div>
     </div>
-
+    
     <!-- Aquí al final antes de cerrar el body 
         se debe poner el Java Script para que
         la página cargue más rápido -->
